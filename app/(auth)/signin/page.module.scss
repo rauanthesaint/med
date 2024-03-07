@@ -1,0 +1,14 @@
+.Page {
+    form {
+        width: min(100%, 480px);
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+}

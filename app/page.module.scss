@@ -1,0 +1,64 @@
+.highlight {
+    color: var(--pr);
+}
+
+.card__icon {
+    $size: 40px;
+    min-width: $size;
+    height: $size;
+    border-radius: 50%;
+    background: var(--pr);
+    color: var(--bg);
+    display: grid;
+    place-items: center;
+}
+
+.Card__Container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    article {
+        min-width: 320px;
+        max-width: 480px;
+        flex: 1;
+    }
+}
+
+.Flex__Container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.list {
+    color: var(--fg-100);
+    li {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.Button {
+    width: 160px;
+}
+@media screen and (max-width: 768px) {
+    .Button {
+        width: 100%;
+    }
+}
+
+#Section__Contacts {
+    background-color: var(--fg);
+    color: var(--bg);
+    padding: 2rem;
+    border-radius: 2rem;
+
+    form {
+        width: min(100%, 400px);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

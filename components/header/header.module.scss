@@ -1,0 +1,15 @@
+.Header {
+    height: 4rem;
+    .Container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img {
+        height: clamp(28px, 1.666666vw, 32px);
+    }
+    button {
+        width: 120px;
+    }
+}

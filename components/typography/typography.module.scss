@@ -1,0 +1,58 @@
+.Heading {
+    $max: 40px;
+    $mid: 5vw;
+    $min: 36px;
+    $lhCoefficient: 1.3;
+    font-size: clamp($min, $mid, $max);
+    line-height: clamp(
+        $min * $lhCoefficient,
+        $mid * $lhCoefficient,
+        $max * $lhCoefficient
+    );
+
+    font-weight: 600;
+}
+.Display {
+    $max: 96px;
+    $mid: 5vw;
+    $min: 52px;
+    $lhCoefficient: 1.15;
+    font-size: clamp($min, $mid, $max);
+    line-height: clamp(
+        $min * $lhCoefficient,
+        $mid * $lhCoefficient,
+        $max * $lhCoefficient
+    );
+    width: 70%;
+    font-weight: 700;
+}
+.Label {
+    &.sm {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &.md {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &.lg {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    font-weight: 500;
+}
+.Paragraph {
+    $max: 18px;
+    $mid: 3vw;
+    $min: 16px;
+    $lhCoefficient: 1.5;
+    font-size: clamp($min, $mid, $max);
+    line-height: clamp(
+        $min * $lhCoefficient,
+        $mid * $lhCoefficient,
+        $max * $lhCoefficient
+    );
+    font-weight: 400;
+
+    width: min(100%, 720px);
+}
