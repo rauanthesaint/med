@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Logo from '@/public/static/img/Logo.svg'
-import { Header, Button } from '@/components'
+import { Header } from '@/components'
 
 import { usePathname } from 'next/navigation'
 
@@ -14,14 +14,14 @@ export default function Layout({
     const pathName = usePathname()
     return (
         <div>
-            <Header>
+            {/* <Header>
                 <Image alt="Logo of The Company" src={Logo} />
                 <Button genre="secondary" size="sm">
                     <Link href={pathName === '/signin' ? '/signup' : '/signin'}>
                         {pathName === 'signin' ? 'Sign Up' : 'Sign In'}
                     </Link>
                 </Button>
-            </Header>
+            </Header> */}
             {children}
         </div>
     )

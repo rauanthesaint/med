@@ -1,15 +1,14 @@
 import styles from '@/components/footer/footer.module.scss'
 import { Container } from '..'
-import { Label } from '../typography'
 
 export default function Footer() {
     return (
         <footer className={styles.Footer}>
             <Container className={styles.Container}>
-                <Label size="sm">
+                {/* <Label size="sm">
                     &copy;&nbsp;2023 Digital Healthcare Analyst. All rights
                     reserved
-                </Label>
+                </Label> */}
             </Container>
         </footer>
     )

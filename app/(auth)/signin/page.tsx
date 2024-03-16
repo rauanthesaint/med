@@ -1,9 +1,8 @@
 'use client'
-import { Section, Container, TextField, Button } from '@/components'
-import { Label } from '@/components/typography'
 import { Lock, Mail, NavArrowRight } from 'iconoir-react'
 import { useState } from 'react'
 import styles from './page.module.scss'
+
 export default function Page() {
     const [validEmail, isValidEmail] = useState<boolean>(false)
     const [validPassword, isValidPassword] = useState<boolean>(false)
@@ -16,7 +15,8 @@ export default function Page() {
     }
     return (
         <main className={styles.Page}>
-            <Section>
+            sign in page
+            {/* <Section>
                 <Container>
                     <form action="">
                         <Label size="lg">Sign in to Med</Label>
@@ -68,7 +68,7 @@ export default function Page() {
                         </Button>
                     </form>
                 </Container>
-            </Section>
+            </Section> */}
         </main>
     )
 }

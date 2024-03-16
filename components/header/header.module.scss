@@ -1,15 +1,119 @@
 .Header {
-    height: 4rem;
-    .Container {
+    height: 3rem;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--border);
+
+    .Header__Section,
+    .Header__Section__Block {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+    }
+    .Header__Section {
+        gap: 2rem;
+        .Header__Section__Block {
+            gap: 1rem;
+        }
     }
 
-    img {
-        height: clamp(28px, 1.666666vw, 32px);
+    .Header__Label {
+        .Logo {
+            display: none;
+        }
     }
-    button {
-        width: 120px;
+
+    .Header__Navigation {
+        .Header__Navigation__Category {
+            color: var(--text-tertiary);
+        }
+        .Header__Navigation__Links {
+            position: absolute;
+            background-color: rgba($color: #000, $alpha: 0.6);
+            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+            top: 3rem;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            height: calc(100% - 3rem);
+
+            // transition: opacity 100ms linear, visibility 100ms linear;
+            transition: visibility 100ms linear;
+            visibility: hidden;
+            opacity: 0;
+
+            &.Header__Navigation__Links__Active {
+                visibility: visible;
+                opacity: 1;
+            }
+            flex-direction: column;
+            align-items: flex-start;
+            .Header__Navigation__Link {
+                color: var(--text-tertiary);
+                width: 100%;
+                padding: 8px 0;
+                border-bottom: 1px solid var(--border);
+            }
+        }
+        .Button__Profile {
+            display: none;
+            padding: 0;
+            overflow: hidden;
+            .User__Default__Avatar {
+                width: 32px;
+                height: 32px;
+                background: linear-gradient(
+                    304.89deg,
+                    #0085ff -3.21%,
+                    #f6ff8e 100.78%
+                );
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .Header {
+        padding: 0 32px;
+
+        .Header__Label {
+            .Logo {
+                display: block;
+            }
+        }
+
+        .Header__Navigation {
+            .Header__Navigation__Category {
+                display: none;
+            }
+            .Header__Navigation__Links {
+                position: static;
+                background: transparent;
+                padding: 0;
+                visibility: visible;
+                opacity: 1;
+                flex-direction: row;
+                align-items: center;
+                .Header__Navigation__Link {
+                    color: var(--text-secondary);
+                    transition: color 100ms linear;
+                    &:hover {
+                        color: var(--text-primary);
+                    }
+                    width: auto;
+                    padding: 0;
+                    border-bottom: none;
+                }
+            }
+            .Button__Profile {
+                display: inline-flex;
+            }
+
+            .Button__Menu {
+                display: none;
+            }
+        }
     }
 }

@@ -1,14 +1,7 @@
 'use client'
-import {
-    Container,
-    Section,
-    Button,
-    Card,
-    CardHeader,
-    CardBody,
-    TextField,
-} from '@/components'
-import { Paragraph, Display, Heading, Label } from '@/components/typography'
+
+import { Button } from 'tracey-ui'
+import 'tracey-ui/dist/cjs/index.css'
 
 import styles from '@/app/page.module.scss'
 import { services } from '@/data/service'
@@ -25,7 +18,8 @@ export default function Page() {
 
     return (
         <main>
-            <Section id={styles.banner}>
+            Index page
+            {/* <Section id={styles.banner}>
                 <Container className={styles.Flex__Container}>
                     <Display>
                         Take Care of&nbsp;
@@ -164,7 +158,7 @@ export default function Page() {
                         />
                         <Button
                             disabled={!valid}
-                            genre="primary"
+                            variant="primary"
                             size="sm"
                             className={styles.Button}
                         >
@@ -172,7 +166,7 @@ export default function Page() {
                         </Button>
                     </form>
                 </Container>
-            </Section>
+            </Section> */}
         </main>
     )
 }

@@ -3,21 +3,49 @@
 :root {
     --ff: 'Poppins', sans-serif;
 
-    --bg: #f6f6f6;
-    --fg: #222222;
-    --pr: #4770ff;
+    --background: #f6f6f6;
 
-    --bg-100: #ffffff;
-    --fg-100: #8f8f8f;
-    --fg-200: #3a3a3a;
+    --border: #dcdcdc;
 
-    --err: rgb(209, 56, 56);
+    /* active elements */
+    --active-primary-background: #4770ff;
+    --active-secondary-background: #eeeeee;
+    --active-tertiary-background: transparent;
+
+    --active-tertiary-hover: #ddecff;
+
+    --text-secondary: #8f8f8f;
+    --text-primary: #222222;
+    --text-tertiary: #f6f6f6;
+
+    --activeBackgroundPrimary: #4770ff;
+    --activeBackgroundSecondary: #eeeeee;
+
+    --activeBackgroundHoverPrimary: #3652f5;
+    --activeBackgroundHoverSecondary: #ddecff;
+    --activeBackgroundHoverTertiary: #e6e6e6;
+
+    --activeTextPrimary: #f6f6f6;
+    --activeTextSecondary: #8f8f8f;
+    --activeTextTertiary: #8f8f8f;
+
+    --activeTextHoverSecondary: #111111;
+    --activeTextHoverTertiary: #111111;
+
+    --activeBackgroundDisabled: #e4e4e4;
+    --activeTextDisabled: #8f8f8f;
+
+    --border: #dcdcdc;
+    --focus: #4770ff;
+    --error: #f03636;
+    --errorAlt: #fcd7d7;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: var(--ff);
 }
 
 html,
@@ -27,9 +55,8 @@ body {
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--fg);
-    font-family: var(--ff);
+    background-color: var(--background);
+    color: var(--text-primary);
 }
 
 ul {

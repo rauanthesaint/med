@@ -1,0 +1,28 @@
+.Layout {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 3rem auto;
+    .Layout__Content {
+        display: flex;
+        flex-direction: column;
+        main {
+            width: 100%;
+            height: 100%;
+            padding: 0 24px;
+            overflow-y: scroll;
+
+            section {
+                padding: clamp(1rem, 2.5vw, 2rem) 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .Layout {
+        .Layout__Content {
+            flex-direction: row;
+            overflow-y: hidden;
+        }
+    }
+}

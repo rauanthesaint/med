@@ -1,0 +1,40 @@
+.Page {
+    width: 100%;
+    overflow-y: scroll;
+    section {
+        padding: 2rem 24px;
+    }
+}
+.CardGroup {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    .Card {
+        padding: 12px;
+        border-radius: 20px;
+        .Card__Cover {
+            object-fit: cover;
+            width: 100%;
+            height: max-content;
+            border-radius: 8px;
+        }
+
+        transition: box-shadow 100ms ease-in-out, transform 100ms ease-in-out;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+            transform: scale(1.01);
+        }
+    }
+    #pr__test {
+        background: #ff3131;
+    }
+    #full__test {
+        background: #b822ff;
+    }
+    #sp__test {
+        background: #ff8a00;
+    }
+    #sur__test {
+        background: #00c2ff;
+    }
+}

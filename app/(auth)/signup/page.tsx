@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-import { Section, Container, TextField, Button } from '@/components'
-import { Label } from '@/components/typography'
+import { Section, Container } from '@/components'
 import styles from './page.module.scss'
 import { Lock, Mail, NavArrowRight } from 'iconoir-react'
 
@@ -20,7 +19,8 @@ export default function Page() {
 
     return (
         <main className={styles.Page}>
-            <Section id={styles.Account__Settings} className={styles.Section}>
+            sign up page
+            {/* <Section id={styles.Account__Settings} className={styles.Section}>
                 <Container>
                     <form action="">
                         <section>
@@ -89,7 +89,7 @@ export default function Page() {
                         </Button>
                     </form>
                 </Container>
-            </Section>
+            </Section> */}
         </main>
     )
 }
